@@ -97,7 +97,7 @@ public class ClienteLogica implements Logica {
                     cliente.isCliente(req.getParameter("pws2").trim());
                     //Controle e Salvar
                     CtrlCliente ctrCliente = new CtrlCliente();
-                    ctrCliente.salvar(cliente);
+                    ctrCliente.cadastrar(cliente);
                     //Retorno Positivo
                     req.setAttribute("avisos", cliente.getNome() + " cadastrado com sucesso.");
                     cliente = null;

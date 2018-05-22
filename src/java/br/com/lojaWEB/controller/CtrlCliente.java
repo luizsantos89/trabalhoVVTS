@@ -12,7 +12,7 @@ public class CtrlCliente {
         return clienteDAO.findCliente(email, pws);
     }
 
-    public void salvar(Cliente cliente) throws SQLException, Exception {
+    public void cadastrar(Cliente cliente) throws SQLException, Exception {
         ClienteDAO clienteDAO = new ClienteDAO();
         clienteDAO.create(cliente);
     }

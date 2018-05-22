@@ -7,7 +7,7 @@ import java.util.List;
 
 public class CtrlPedido {
     
-    public void salvar(Pedido pedido) throws SQLException, Exception {
+    public void cadastrar(Pedido pedido) throws SQLException, Exception {
         PedidoDAO pedidoDAO = new PedidoDAO();
         pedidoDAO.create(pedido);
     }

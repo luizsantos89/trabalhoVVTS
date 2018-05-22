@@ -141,7 +141,7 @@ public class Carrinho implements Logica {
                 pedido.setTotal();
                 pedido.setFechado(true);
                 //Cadastrar Pedidos no Banco
-                ctrlPedido.salvar(pedido);
+                ctrlPedido.cadastrar(pedido);
 
                 //Cadastrar no banco os itens da lista
                 for (Item iten : itens) {
